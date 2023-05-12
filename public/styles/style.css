@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #010100;
+  color: white;
+  width: 100vw;
+  font-family: roboto;
+  overflow-x: hidden;
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+main{
+  margin-top: 6rem;
+  justify-content: center;
+  display: flex;
+}
+
+.circle{
+  background-image: linear-gradient(to left top, #051937, #031e51, #172069, #361d7f, #580a90);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 8rem;
+  border-radius: 50%;
+  z-index: 0;
+  right: 18rem;
+}
+
+pre{
+  white-space:pre-wrap;
+}
+main .container{
+  background: linear-gradient(
+    to right bottom,
+    rgba(26, 26, 26, 0.216),
+    rgba(12, 12, 12, 0.232)
+  );  
+  border-radius: 10px;
+  border: 1px solid rgba(98, 96, 96, 0.3);
+  box-shadow: 0px 0px 10px rgba(134, 131, 131, 0.3);
+  padding:.5rem 2rem;
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  backdrop-filter: blur(2rem);
+  flex-direction: column;
+  align-items: center;
+  white-space: pre-wrap;
+  z-index: 100;
+}
+
+.address-bar{
+  background-color: #393737b5;
+  padding: .5rem 2rem;
+  display: flex;
+  width: fit-content;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.getting-started{
+  margin-top: 9rem;
+  padding: 2rem;
+  
+}
+.getting-started h2{
+  font-size: 2rem;
+}
+.guide-box{
+  display: flex;
+}
+.request{
+  width: fit-content;
+  height: fit-content;
+  font-size: 19px;
+  margin-right: 5rem;
+
+  
+}
+ .header{
+  border: .5px solid rgba(255, 255, 255, 0.283);
+  background-color: #010100;
+  background-color: #1d1c1c;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 1rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+ .header span {
+  background-color: indigo;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 4px;
+  padding: .5rem;
+}
+
+.information {
+  padding: .5rem;
+border: .5px solid rgba(255, 255, 255, 0.283);
+}
+
+.information span{
+  color:rgb(164, 89, 217);font-weight: bold;
+}
+.information p {
+  margin-bottom: 3px;
+}
+.memes-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 6rem;
+}
+.memes-container img{
+  width: 25rem;
+  height: 25rem;
+  margin-right: 20px;
+}
+.img-container{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.meme .author{
+  display: flex;
+  margin-bottom: 5px;
+}
+.meme span {
+  color: rgb(164, 89, 217);
+  margin-right: 4px;
+}
+.meme > p{
+  font-size: 23px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.524);
+  margin-bottom: 10px;
+}
+.meme{
+  border: 1px solid rgba(255, 255, 255, 0.251);
+  padding: 1rem;
+}
+
+footer{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+  align-items: center;
+  height: 3rem;
+  padding-top: 2rem;
+}
+footer i{
+  margin-right: 1.2rem;
+}
+
+@media screen and (max-width: 680px) {
+
+  body{
+    overflow: auto;
+  }
+
+  header{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  main{
+    padding:0  2rem;
+    margin-top: 2rem;
+  }
+  main .container {
+    font-size: 15px;
+    padding: 1rem;
+  }
+  main .container .glass{
+    padding: 0;
+  }
+  samp{
+    white-space: pre-wrap;  
+  }
+  .circle{
+    top: 18rem;
+    filter: blur(1px);
+    height: 100px;
+    width: 100px;
+    right: 4rem;
+  }
+
+.getting-started{
+  margin-top: 9rem;
+  padding: 2rem 0;
+
+}
+.guide-box{
+  flex-direction: column;
+}
+.memes-container{
+  flex-direction: column;
+}
+.memes-container img{
+  margin-bottom: 6px;
+}
+}
