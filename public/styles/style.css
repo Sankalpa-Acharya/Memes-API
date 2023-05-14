@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #010100;
   color: white;
   width: 100vw;
@@ -16,19 +16,23 @@ body{
   flex-direction: column;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-main{
-  margin-top: 6rem;
+header h1 {
+  font-size: 3rem;
+}
+
+main {
+  margin-top: 4rem;
   justify-content: center;
   display: flex;
 }
 
-.circle{
+.circle {
   background-image: linear-gradient(to left top, #051937, #031e51, #172069, #361d7f, #580a90);
   height: 200px;
   width: 200px;
@@ -36,22 +40,34 @@ main{
   top: 8rem;
   border-radius: 50%;
   z-index: 0;
-  right: 18rem;
+  background-image: url('../img/download.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 7rem;
 }
 
-pre{
-  white-space:pre-wrap;
+pre {
+  white-space: pre-wrap;
 }
-main .container{
-  background: linear-gradient(
-    to right bottom,
-    rgba(26, 26, 26, 0.216),
-    rgba(12, 12, 12, 0.232)
-  );  
+
+.usage {
+  display: flex;
+}
+
+.usage img {
+  position: relative;
+  filter: drop-shadow(3px 3px 0 rgb(255, 255, 255)) drop-shadow(-1px -1px 0 rgb(235, 231, 231));
+
+}
+
+main .container {
+  background: linear-gradient(to right bottom,
+      rgba(26, 26, 26, 0.216),
+      rgba(12, 12, 12, 0.232));
   border-radius: 10px;
   border: 1px solid rgba(98, 96, 96, 0.3);
   box-shadow: 0px 0px 10px rgba(134, 131, 131, 0.3);
-  padding:.5rem 2rem;
+  padding: .5rem 2rem;
   position: relative;
   font-size: 18px;
   display: flex;
@@ -62,7 +78,7 @@ main .container{
   z-index: 100;
 }
 
-.address-bar{
+.address-bar {
   background-color: #393737b5;
   padding: .5rem 2rem;
   display: flex;
@@ -71,26 +87,30 @@ main .container{
   border-radius: 10px;
 }
 
-.getting-started{
+.getting-started {
   margin-top: 9rem;
   padding: 2rem;
-  
+
 }
-.getting-started h2{
+
+.getting-started h2 {
   font-size: 2rem;
 }
-.guide-box{
+
+.guide-box {
   display: flex;
 }
-.request{
+
+.request {
   width: fit-content;
   height: fit-content;
   font-size: 19px;
   margin-right: 5rem;
 
-  
+
 }
- .header{
+
+.header {
   border: .5px solid rgba(255, 255, 255, 0.283);
   background-color: #010100;
   background-color: #1d1c1c;
@@ -101,7 +121,7 @@ main .container{
   margin-top: 5rem;
 }
 
- .header span {
+.header span {
   background-color: indigo;
   color: white;
   font-weight: bold;
@@ -112,51 +132,60 @@ main .container{
 
 .information {
   padding: .5rem;
-border: .5px solid rgba(255, 255, 255, 0.283);
+  border: .5px solid rgba(255, 255, 255, 0.283);
 }
 
-.information span{
-  color:rgb(164, 89, 217);font-weight: bold;
+.information span {
+  color: rgb(164, 89, 217);
+  font-weight: bold;
 }
+
 .information p {
   margin-bottom: 3px;
 }
-.memes-container{
+
+.memes-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 6rem;
 }
-.memes-container img{
+
+.memes-container img {
   width: 25rem;
   height: 25rem;
   margin-right: 20px;
 }
-.img-container{
+
+.img-container {
   display: flex;
   margin-top: 2rem;
   justify-content: space-between;
 }
-.meme .author{
+
+.meme .author {
   display: flex;
   margin-bottom: 5px;
 }
+
 .meme span {
   color: rgb(164, 89, 217);
   margin-right: 4px;
 }
-.meme > p{
+
+.meme>p {
   font-size: 23px;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.524);
   margin-bottom: 10px;
 }
-.meme{
+
+.meme {
   border: 1px solid rgba(255, 255, 255, 0.251);
   padding: 1rem;
 }
 
-footer{
+footer {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -164,36 +193,48 @@ footer{
   align-items: center;
   height: 3rem;
   padding-top: 2rem;
+  box-sizing: content-box;
 }
-footer i{
+
+footer i {
   margin-right: 1.2rem;
 }
 
 @media screen and (max-width: 680px) {
 
-  body{
+  body {
     overflow: auto;
   }
 
-  header{
+  header {
     font-size: 1.1rem;
     font-weight: bold;
   }
-  main{
-    padding:0  2rem;
+  .getting-started{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    padding: 0 2rem;
+    display: flex;
     margin-top: 2rem;
   }
+
   main .container {
     font-size: 15px;
     padding: 1rem;
   }
-  main .container .glass{
+
+  main .container .glass {
     padding: 0;
   }
-  samp{
-    white-space: pre-wrap;  
+
+  samp {
+    white-space: pre-wrap;
   }
-  .circle{
+
+  .circle {
     top: 18rem;
     filter: blur(1px);
     height: 100px;
@@ -201,18 +242,33 @@ footer i{
     right: 4rem;
   }
 
-.getting-started{
-  margin-top: 9rem;
-  padding: 2rem 0;
+  .getting-started {
+    margin-top: 9rem;
+    padding: 2rem 0;
 
-}
-.guide-box{
-  flex-direction: column;
-}
-.memes-container{
-  flex-direction: column;
-}
-.memes-container img{
-  margin-bottom: 6px;
-}
+  }
+
+  .guide-box {
+    flex-direction: column;
+  }
+
+  .img-container {
+    flex-direction: column;
+  }
+
+  .meme{
+    width: fit-content;
+    margin-bottom: 15px;
+  }
+  .meme img{
+    width: 22rem;
+    height: 22rem;
+  }
+  .usage{
+    display: flex;
+    flex-direction: column;
+  }
+  .usage img{
+    display: none;
+  }
 }
