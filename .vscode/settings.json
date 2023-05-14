@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "undefined/subscriptions/a1840cbe-15ba-4777-b76b-7bb2ff4ae678/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/Breaking-Branches",
-    "appService.deploySubpath": "."
-}
