@@ -1,5 +1,6 @@
-import express from 'express'
-import homeRouter from './routes/memesRouter.js'
+import express from 'express';
+import cors from 'cors'; 
+import homeRouter from './routes/memesRouter.js';
 
 const app = express()
 const port = process.env.PORT || 3000
